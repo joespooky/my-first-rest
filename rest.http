@@ -1,0 +1,36 @@
+POST http://localhost:3000/products/
+Content-Type: application/json
+[
+ {
+  "name": "Alu",
+  "quantity": 100
+ }
+]
+
+#
+PUT http://localhost:3000/products/3
+Content-Type: application/json
+{
+ "name": "Steel",
+ "qty": 120,
+ "location": 1
+}
+
+#
+GET http://localhost:3000/products/3
+Content-Type: application/json
+
+#
+DELETE http://localhost:3000/products/1
+Content-Type: application/json
+
+#
+POST http://localhost:3000/locations
+Content-Type: application/json
+[
+ {
+  "name": "Nagoya",
+  "longitude": 136.7,
+  "latitude": 37.2
+ }
+]
